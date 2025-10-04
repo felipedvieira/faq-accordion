@@ -53,7 +53,7 @@ body{
     padding: 10px 0;
 }
 
-.faq-question{
+.faq-question,.faq-question2,.faq-question3,.faq-question4{
     background: none;
     border: none;
     width: 100%;
