@@ -23,7 +23,8 @@ body{
 }
 
 #faq-section{
-    width: 500px;
+    margin-top: 150px;
+    width: 600px;
     background-color: hsl(0, 100%, 100%);
     font-size: 16px;
     border-radius: 10px;
@@ -49,7 +50,9 @@ body{
 }
 
 .faq-item{
-    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+    width: 95%;
+    border-bottom: 1px solid #dddddd6b;
     padding: 10px 0;
 }
 
@@ -64,7 +67,7 @@ body{
     align-items: center;
     justify-content: space-between;
     font-family: "Work Sans", sans-serif;;
-    font-size: 1.2rem;
+    font-size: 16px;
     color: hsl(292, 42%, 14%);
     font-weight: 600;
 
@@ -109,7 +112,7 @@ body{
     display:none;
 }
 #faq-section{
-    width: 60%;
+    width: 80%;
     background-color: hsl(0, 100%, 100%);
     font-size: 16px;
     border-radius: 10px;
