@@ -37,7 +37,7 @@
      
     </div>
     <div class=" faq-item">
-      <button class="faq-question">  Is Frontend Mentor free? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon"></button> 
+      <button class="faq-question2">  Is Frontend Mentor free? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon2"></button> 
       <div class="faq-answer">
         <p>
   Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
@@ -45,7 +45,7 @@
       </div>
       </div>
       <div class=" faq-item">
-      <button class="faq-question"> Can I use Frontend Mentor projects in my portfolio? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon"></button> 
+      <button class="faq-question3"> Can I use Frontend Mentor projects in my portfolio? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon3"></button> 
       <div class="faq-answer">
         <p>
   Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
@@ -53,7 +53,7 @@
       </div>
       </div>
       <div class=" faq-item">
-      <button class="faq-question">  How can I get help if I'm stuck on a Frontend Mentor challenge? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon"></button> 
+      <button class="faq-question4">  How can I get help if I'm stuck on a Frontend Mentor challenge? <img src="assets\images\icon-plus.svg" alt="" id="imgIcon4"></button> 
       <div class="faq-answer">
         <p>
   The best place to get help is inside Frontend Mentor's Discord community. There's a help 
@@ -72,7 +72,6 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const questions = document.querySelectorAll(".faq-question");
-      var myImg = document.getElementById('imgIcon');
       questions.forEach(question => {
         question.addEventListener("click", () => {
           question.classList.toggle("active");
@@ -82,10 +81,70 @@
           if(answer.style.display == "block") {
             answer.style.display = "none";
             document.getElementById("imgIcon").src = 'assets/images/icon-plus.svg'
-
+            
           } else { 
             answer.style.display = "block";
             document.getElementById("imgIcon").src = 'assets/images/icon-minus.svg';
+           }
+        });
+      });
+
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const questions = document.querySelectorAll(".faq-question2");
+      questions.forEach(question => {
+        question.addEventListener("click", () => {
+          question.classList.toggle("active");
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector(".icon");
+
+          if(answer.style.display == "block") {
+            answer.style.display = "none";
+            document.getElementById("imgIcon2").src = 'assets/images/icon-plus.svg'
+            
+          } else { 
+            answer.style.display = "block";
+            document.getElementById("imgIcon2").src = 'assets/images/icon-minus.svg';
+           }
+        });
+      });
+
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const questions = document.querySelectorAll(".faq-question3");
+      questions.forEach(question => {
+        question.addEventListener("click", () => {
+          question.classList.toggle("active");
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector(".icon");
+
+          if(answer.style.display == "block") {
+            answer.style.display = "none";
+            document.getElementById("imgIcon3").src = 'assets/images/icon-plus.svg'
+            
+          } else { 
+            answer.style.display = "block";
+            document.getElementById("imgIcon3").src = 'assets/images/icon-minus.svg';
+           }
+        });
+      });
+
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const questions = document.querySelectorAll(".faq-question4");
+      questions.forEach(question => {
+        question.addEventListener("click", () => {
+          question.classList.toggle("active");
+          const answer = question.nextElementSibling;
+          const icon = question.querySelector(".icon");
+
+          if(answer.style.display == "block") {
+            answer.style.display = "none";
+            document.getElementById("imgIcon4").src = 'assets/images/icon-plus.svg'
+            
+          } else { 
+            answer.style.display = "block";
+            document.getElementById("imgIcon4").src = 'assets/images/icon-minus.svg';
            }
         });
       });
