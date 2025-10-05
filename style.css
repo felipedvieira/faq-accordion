@@ -23,7 +23,6 @@ body{
 }
 
 #faq-section{
-    margin-top: 150px;
     width: 600px;
     background-color: hsl(0, 100%, 100%);
     font-size: 16px;
@@ -31,6 +30,7 @@ body{
     margin: 50px auto;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
 }
 
 .faq-title{
@@ -88,6 +88,11 @@ body{
     font-weight: 400;
 }
 
+.inv-div{
+  height: 150px; 
+  visibility: hidden; 
+
+}
 
 @media (min-width:426px) {
 .bgSelectorMobile{
